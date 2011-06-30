@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Entando-Plugin-Builder</name>
+	<name>Entando-Plugin-Builder-for-ANT</name>
 	<comment>Entando-Plugin-Builder: Use the build.xml with ANT</comment>
 	<projects>
 	</projects>
