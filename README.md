@@ -14,4 +14,4 @@ Open the build.xml file and setup these variables:
 - Object = mypluginobject
 - ObjectClass = MyPluginObject
 
-Then use the <build> task with ANT. 
+Then use the <strong>build</strong> task with ANT. 
