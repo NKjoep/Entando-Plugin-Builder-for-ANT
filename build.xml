@@ -51,10 +51,10 @@
 		</move>
 		
 		<!--
-			Sintassi:
-			dir = è la directory che contiene il nuovo plugin.
-			value = è il nuovo valore da scrivere al posto del replacetoken
-			replacetoken = la stringa che viene cercata all'interno dei file
+			Syntax:
+			dir = it's the folder containing the new plugin.
+			value = it's the new value which will overwrite the "replacetoken"
+			replacetoken = the string searched in files
 		-->
 		<replace dir="./${destinationFolderPrefix}${newPluginName}" value="${newPluginNameClass}">
 			<include name="**/*"/>
