@@ -7,7 +7,7 @@ and start working on it.
 
 How to use it
 -------------
-Open the build.xml file and setup these two vars:
+Open the build.xml file and setup these variables:
 
 - newPluginName = jpmyplugin
 - newPluginNameClass = Jpmyplugin
