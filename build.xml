@@ -10,10 +10,10 @@
 	-->
 	
 	<!-- options /start -->
-	<property name="newPluginName" value="jpstaticresourceeditor" /><!-- codice plugin tutto minuscolo es: jacms -->
-	<property name="newPluginNameClass" value="Jpstaticresourceeditor" /><!-- classe java plugin es: Jacms   -->
-	<property name="Object" value="resourceeditor" /><!-- codice package es: content -->
-	<property name="ObjectClass" value="Resourceeditor" /><!-- classe del package es: Content -->
+	<property name="newPluginName" value="jpyourplugin" /><!-- codice plugin tutto minuscolo es: jacms -->
+	<property name="newPluginNameClass" value="Jpyourplugin" /><!-- classe java plugin es: Jacms   -->
+	<property name="Object" value="myobject" /><!-- codice package es: content -->
+	<property name="ObjectClass" value="MyObject" /><!-- classe del package es: Content -->
 	<!-- options /end -->
 	
 	<!-- advanced options /start-->
