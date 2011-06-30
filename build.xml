@@ -10,10 +10,10 @@
 	-->
 	
 	<!-- options /start -->
-	<property name="newPluginName" value="jpyourplugin" /><!-- codice plugin tutto minuscolo es: jacms -->
-	<property name="newPluginNameClass" value="Jpyourplugin" /><!-- classe java plugin es: Jacms   -->
-	<property name="Object" value="myobject" /><!-- codice package es: content -->
-	<property name="ObjectClass" value="MyObject" /><!-- classe del package es: Content -->
+	<property name="newPluginName" value="jpyourplugin" /><!-- plugin code all lowercase, ex.: jacms -->
+	<property name="newPluginNameClass" value="Jpyourplugin" /><!-- java class of your plugin, ex.: Jacms   -->
+	<property name="Object" value="myobject" /><!-- java package code, ex.: content -->
+	<property name="ObjectClass" value="MyObject" /><!-- java class for the package, ex.: Content -->
 	<!-- options /end -->
 	
 	<!-- advanced options /start-->
