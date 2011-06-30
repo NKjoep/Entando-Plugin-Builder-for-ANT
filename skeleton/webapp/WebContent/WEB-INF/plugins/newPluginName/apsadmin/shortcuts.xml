@@ -1,0 +1,14 @@
+<shortcut-def>
+	
+	<shortcuts>
+		<shortcut id="${newPluginName}.edit.shortCut" requiredPermission="superuser" menusection="plugins" source="${newPluginName}">
+			<description key="${newPluginName}.shortCut.list.shortDesc" />
+			<longdesc key="${newPluginName}.shortCut.list.longDesc" />
+			<url>
+				<param name="namespace">/do/${newPluginName}/${ObjectClass}</param>
+				<param name="actionName">entry</param>
+			</url>
+		</shortcut>
+	</shortcuts>
+	
+</shortcut-def>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+	<package name="${newPluginName}_do/${newPluginName}/${Object}" namespace="/do/${newPluginName}/${ObjectClass}" extends="japs-default">
+
+		<action name="intro" class="${newPluginName}${ObjectClass}Action">
+			<result type="tiles">admin.${newPluginName}.${Object}.intro</result>
+			<interceptor-ref name="japsDefaultStack" />
+		</action>	
+	
+	</package>
+
+</struts>

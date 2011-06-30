@@ -1,0 +1,5 @@
+${newPluginName}
+
+Author:	
+Date:	
+Info:	

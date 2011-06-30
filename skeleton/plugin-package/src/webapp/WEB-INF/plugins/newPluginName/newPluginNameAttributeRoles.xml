@@ -1,0 +1,7 @@
+<roles>
+	<role>
+		<name>${newPluginName}:</name>
+		<description></description>
+		<allowedTypes></allowedTypes>
+	</role>
+</roles>

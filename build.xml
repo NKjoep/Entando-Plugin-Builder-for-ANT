@@ -1,0 +1,81 @@
+<project name="E.P.B." basedir=".">
+	<description>Entando Plugin Builder for ANT</description>
+	
+	<!--
+		Usage: fill the values of the properties:
+			newPluginName = jpmyplugin
+			newPluginNameClass = Jpmyplugin
+			Object = mypluginobject
+			ObjectClass = MyPluginObject
+	-->
+	
+	<!-- options /start -->
+	<property name="newPluginName" value="jpstaticresourceeditor" /><!-- codice plugin tutto minuscolo es: jacms -->
+	<property name="newPluginNameClass" value="Jpstaticresourceeditor" /><!-- classe java plugin es: Jacms   -->
+	<property name="Object" value="resourceeditor" /><!-- codice package es: content -->
+	<property name="ObjectClass" value="Resourceeditor" /><!-- classe del package es: Content -->
+	<!-- options /end -->
+	
+	<!-- advanced options /start-->
+	<property name="skeletonSrcPath" value="./skeleton/plugin-package" />
+	<property name="destinationFolderPrefix" value="dist-" />
+	<!-- advanced options /end -->
+	
+	
+	<target name="clean">
+		<echo message="cleaning..." />
+		<delete dir="./${destinationFolderPrefix}${newPluginName}" includeemptydirs="true" failonerror="false" />
+		<delete dir="./${destinationFolderPrefix}tmp-${newPluginName}" includeemptydirs="true" failonerror="false" />
+		<echo message="...cleaning done." />
+	</target>
+	
+	<target name="build" description="build" depends="clean" >
+		<echo message="[E.P.B.] starting..." />
+		
+		<mkdir dir="./${destinationFolderPrefix}${newPluginName}" />
+
+		<copy todir="./${destinationFolderPrefix}${newPluginName}">
+			<fileset dir="${skeletonSrcPath}"/>
+		</copy>
+		
+		<move todir="./${destinationFolderPrefix}${newPluginName}/">
+			<fileset dir="./${destinationFolderPrefix}${newPluginName}">
+				<include name="**/*"/>
+			</fileset>
+			<filtermapper>
+				<replacestring from="newPluginNameClass" to="${newPluginNameClass}"/>
+				<replacestring from="newPluginName" to="${newPluginName}"/>
+				<replacestring from="ObjectClass" to="${ObjectClass}"/>
+				<replacestring from="Object" to="${Object}"/>
+			</filtermapper>
+		</move>
+		
+		<!--
+			Sintassi:
+			dir = è la directory che contiene il nuovo plugin.
+			value = è il nuovo valore da scrivere al posto del replacetoken
+			replacetoken = la stringa che viene cercata all'interno dei file
+		-->
+		<replace dir="./${destinationFolderPrefix}${newPluginName}" value="${newPluginNameClass}">
+			<include name="**/*"/>
+			<replacetoken>${newPluginNameClass}</replacetoken>
+		</replace>
+		<replace dir="./${destinationFolderPrefix}${newPluginName}" value="${newPluginName}">
+			<include name="**/*"/>
+			<replacetoken>${newPluginName}</replacetoken>
+		</replace>
+
+		<replace dir="./${destinationFolderPrefix}${newPluginName}" value="${ObjectClass}">
+			<include name="**/*"/>
+			<replacetoken>${ObjectClass}</replacetoken>
+		</replace>
+
+		<replace dir="./${destinationFolderPrefix}${newPluginName}" value="${Object}">
+			<include name="**/*"/>
+			<replacetoken>${Object}</replacetoken>
+		</replace>
+
+		<echo message="[E.P.B.] .end" />
+	</target>
+	
+</project>
