@@ -2,7 +2,7 @@ Entando Plugin Builder for ANT
 ==============================
 
 The goal of this ANT script is to provide
-an easy way to create and "empty" jAPS Entando plugin
+an easy way to create an "empty" jAPS Entando plugin
 and start working on it.
 
 How to use it
