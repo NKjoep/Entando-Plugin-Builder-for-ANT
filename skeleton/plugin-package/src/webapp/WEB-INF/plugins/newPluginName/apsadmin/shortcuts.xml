@@ -6,7 +6,7 @@
 			<longdesc key="${newPluginName}.shortCut.list.longDesc" />
 			<url>
 				<param name="namespace">/do/${newPluginName}/${ObjectClass}</param>
-				<param name="actionName">entry</param>
+				<param name="actionName">intro</param>
 			</url>
 		</shortcut>
 	</shortcuts>

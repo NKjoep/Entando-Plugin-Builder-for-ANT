@@ -7,6 +7,6 @@
     <definition extends="main.layout" name="admin.${newPluginName}.${Object}.intro">
 		<put-attribute name="title" value="title.${newPluginName}" />
 		<put-attribute name="extraResources" value="/WEB-INF/plugins/${newPluginName}/apsadmin/jsp/common/template/extraresources/${newPluginName}-${Object}-extras.jsp" />
-		<put-attribute name="body" value="/WEB-INF/plugins/${newPluginName}/apsadmin/jsp/entry.jsp" />
+		<put-attribute name="body" value="/WEB-INF/plugins/${newPluginName}/apsadmin/jsp/${newPluginName}-${Object}-intro.jsp" />
 	</definition>
 </tiles-definitions>

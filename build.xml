@@ -5,15 +5,15 @@
 		Usage: fill the values of the properties:
 			newPluginName = jpmyplugin
 			newPluginNameClass = Jpmyplugin
-			Object = mypluginobject
-			ObjectClass = MyPluginObject
+			Object = mypluginobj
+			ObjectClass = MyPluginObj
 	-->
 	
 	<!-- options /start -->
 	<property name="newPluginName" value="jpyourplugin" /><!-- plugin code all lowercase, ex.: jacms -->
 	<property name="newPluginNameClass" value="Jpyourplugin" /><!-- java class of your plugin, ex.: Jacms   -->
-	<property name="Object" value="myobject" /><!-- java package code, ex.: content -->
-	<property name="ObjectClass" value="MyObject" /><!-- java class for the package, ex.: Content -->
+	<property name="Object" value="something" /><!-- java package code, ex.: content -->
+	<property name="ObjectClass" value="Something" /><!-- java class for the package, ex.: Content -->
 	<!-- options /end -->
 	
 	<!-- advanced options /start-->
